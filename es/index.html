@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bunker — IA privada. Sellada dentro.</title>
+<meta name="description" content="Desplegamos IA en tu propia infraestructura. Tus datos nunca salen del edificio. IA privada, on-prem y conforme al RGPD para empresas que por ley no pueden enviar datos a la nube." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../style.css" />
+<script type="importmap">
+{ "imports": {
+  "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+}}
+</script>
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+
+  <div id="preloader">
+    <div class="pre-inner">
+      <span class="pre-label">SELLANDO EL BÚNKER</span>
+      <span class="count">0</span>
+    </div>
+  </div>
+
+  <canvas id="bg"></canvas>
+
+  <header class="nav">
+    <a href="#top" class="brand">BUNKER<span class="brand-dot"></span></a>
+    <nav class="nav-links">
+      <a href="#approach">Enfoque</a>
+      <a href="#built">Para quién</a>
+      <span class="lang"><a href="../">EN</a><a class="active">ES</a><a href="../de/">DE</a><a href="../fr/">FR</a></span>
+      <a href="#contact" class="nav-cta magnetic">Reserva una llamada</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <span class="eyebrow">IA PRIVADA · ON-PREM</span>
+      <h1 class="hero-title reveal">IA QUE<br>NUNCA SALE<br>DEL EDIFICIO.</h1>
+      <p class="hero-sub">Desplegamos IA en infraestructura que es tuya. Tus documentos, tus modelos, tu perímetro. Nada toca jamás la nube.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-solid magnetic">Reserva una llamada</a>
+        <a href="#approach" class="btn btn-ghost magnetic">Cómo funciona</a>
+      </div>
+      <div class="hero-meta">
+        <span>Conforme al RGPD</span><i>/</i><span>Air-gapped</span><i>/</i><span>Cero salida de datos</span>
+      </div>
+      <div class="scroll-hint">scroll</div>
+    </section>
+
+    <section class="statement" id="problem">
+      <p class="statement-text reveal-words">
+        Tus mejores datos son los que <em>no</em> puedes subir. Expedientes legales. Historias clínicas.
+        Informes financieros. La nube está descartada, y con ella la IA que todos los demás sí pueden usar.
+      </p>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <span>CERO SALIDA&nbsp;·&nbsp;EN TU HARDWARE&nbsp;·&nbsp;CONFORME AL RGPD&nbsp;·&nbsp;MODELOS OPEN&nbsp;·&nbsp;AIR-GAPPED&nbsp;·&nbsp;AUDITABLE&nbsp;·&nbsp;CERO SALIDA&nbsp;·&nbsp;EN TU HARDWARE&nbsp;·&nbsp;CONFORME AL RGPD&nbsp;·&nbsp;MODELOS OPEN&nbsp;·&nbsp;AIR-GAPPED&nbsp;·&nbsp;AUDITABLE&nbsp;·&nbsp;</span>
+    </div>
+
+    <section class="approach" id="approach">
+      <div class="section-head">
+        <span class="eyebrow">EL ENFOQUE</span>
+        <h2 class="reveal">Tres pasos.<br>Nada sale.</h2>
+      </div>
+      <div class="steps">
+        <article class="step reveal">
+          <span class="step-num">01</span>
+          <h3>Desplegar</h3>
+          <p>Instalamos modelos open en tu hardware o en una nube privada que tú controlas. Todo el stack vive dentro de tu perímetro.</p>
+        </article>
+        <article class="step reveal">
+          <span class="step-num">02</span>
+          <h3>Conectar</h3>
+          <p>Tus archivos y sistemas conectados a un RAG privado. Las respuestas llegan con citas a tus propios documentos, no con conjeturas.</p>
+        </article>
+        <article class="step reveal">
+          <span class="step-num">03</span>
+          <h3>Sellar</h3>
+          <p>Air-gapped, fortificado, auditado. Lo blindamos, te entregamos las llaves y lo mantenemos en marcha.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="section-head">
+        <span class="eyebrow">QUÉ OBTIENES</span>
+        <h2 class="reveal">Una caja fuerte que piensa.</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature reveal"><h4>Cero salida de datos</h4><p>Los datos nunca cruzan tu firewall. Ni para entrenar, ni para inferir, nunca.</p></div>
+        <div class="feature reveal"><h4>En tu hardware</h4><p>Corre en hardware que es tuyo o en una nube privada que controlas al 100%. Sin tenencia compartida.</p></div>
+        <div class="feature reveal"><h4>Conforme al RGPD</h4><p>Pensada para el cumplimiento europeo desde el día cero. Auditable por diseño, defendible sobre el papel.</p></div>
+        <div class="feature reveal"><h4>Modelos open</h4><p>Sin lock-in de proveedor. Cambia y actualiza modelos con total libertad.</p></div>
+        <div class="feature reveal"><h4>Tus documentos</h4><p>Recuperación privada sobre tus propios archivos, con citas que puedes rastrear y en las que confiar.</p></div>
+        <div class="feature reveal"><h4>Lo operamos</h4><p>Monitorización, actualizaciones, guardia. Tu equipo de IA on-prem sin sumar plantilla.</p></div>
+      </div>
+    </section>
+
+    <section class="built" id="built">
+      <div class="section-head">
+        <span class="eyebrow">PARA QUIÉN</span>
+        <h2 class="reveal">Donde la nube<br>no es opción.</h2>
+      </div>
+      <ul class="verticals">
+        <li class="reveal">Despachos legales</li>
+        <li class="reveal">Clínicas y salud</li>
+        <li class="reveal">Banca y fintech</li>
+        <li class="reveal">Aseguradoras</li>
+        <li class="reveal">Asesorías y gestorías</li>
+        <li class="reveal">Sector público</li>
+      </ul>
+      <p class="proof reveal">
+        Creada por un ingeniero que dedicó dos décadas a diseñar infraestructura segura y conforme
+        para algunas de las instituciones más reguladas de Europa. No atornillamos IA sobre tu stack.
+        La construimos dentro de tus muros, donde tus datos ya viven.
+      </p>
+    </section>
+
+    <section class="cta" id="contact">
+      <span class="eyebrow">HABLEMOS</span>
+      <h2 class="cta-title reveal">Vamos a sellarlo.</h2>
+      <p class="cta-sub">Dinos qué <em>no</em> pueden hacer tus datos. Te mostramos lo que tu IA sí puede.</p>
+      <a href="mailto:hello@bunker.io" class="btn btn-solid btn-lg magnetic">hello@bunker.io</a>
+    </section>
+
+    <footer class="footer">
+      <span class="brand">BUNKER<span class="brand-dot"></span></span>
+      <span class="foot-tag">IA privada, en tus términos.</span>
+      <span class="foot-meta">bunker.io · © 2026</span>
+    </footer>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script type="module" src="../main.js"></script>
+</body>
+</html>

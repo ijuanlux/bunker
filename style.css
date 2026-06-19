@@ -46,6 +46,10 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .nav-links a{color:var(--fg);opacity:.85;transition:opacity .25s}
 .nav-links a:hover{opacity:1}
 .nav-cta{border:1px solid var(--fg);padding:.55rem 1.1rem;border-radius:100px;opacity:1!important}
+.lang{display:flex;gap:.55rem;font-family:'Space Mono',monospace;font-size:.72rem;letter-spacing:.12em}
+.lang a{opacity:.45;transition:opacity .25s;cursor:none}
+.lang a:hover{opacity:.9}
+.lang a.active{opacity:1;color:var(--accent)}
 
 /* ---- layout base ---- */
 section{position:relative;padding:clamp(5rem,12vh,11rem) clamp(1.2rem,6vw,7rem)}
@@ -129,7 +133,7 @@ h1,h2,h3,h4{font-weight:700;letter-spacing:-.025em;line-height:.96}
 @media(max-width:860px){
   .steps{grid-template-columns:1fr}
   .feature-grid{grid-template-columns:1fr 1fr}
-  .nav-links a:not(.nav-cta){display:none}
+  .nav-links > a:not(.nav-cta){display:none}
   .verticals li{flex:1 1 50%}
 }
 @media(max-width:540px){
