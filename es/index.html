@@ -91,6 +91,58 @@
       </div>
     </section>
 
+    <section class="diagram" id="architecture">
+      <div class="section-head">
+        <span class="eyebrow">CÓMO SE DESPLIEGA</span>
+        <h2 class="reveal">Dentro de tu perímetro.</h2>
+      </div>
+      <div class="diagram-wrap">
+        <svg class="arch" viewBox="0 0 1040 540" role="img" aria-label="Arquitectura a alto nivel: tus datos y el motor Bunker corren dentro de tu propio perímetro; la nube pública queda bloqueada.">
+          <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" class="dg-arrowhead"/>
+            </marker>
+          </defs>
+          <rect class="dg-perimeter" x="30" y="80" width="690" height="420" rx="22"/>
+          <text class="dg-perimeter-label" x="54" y="116">TU PERÍMETRO</text>
+          <text class="dg-perimeter-sub" x="54" y="136">On-prem / nube privada</text>
+          <g class="dg-box-g"><rect class="dg-box" x="65" y="170" width="170" height="60" rx="10"/><text class="dg-node-label" x="150" y="206">Documentos</text></g>
+          <g class="dg-box-g"><rect class="dg-box" x="65" y="252" width="170" height="60" rx="10"/><text class="dg-node-label" x="150" y="288">Bases de datos</text></g>
+          <g class="dg-box-g"><rect class="dg-box" x="65" y="334" width="170" height="60" rx="10"/><text class="dg-node-label" x="150" y="370">Email y sistemas</text></g>
+          <path class="dg-flow" d="M235,200 C275,210 280,260 312,275" marker-end="url(#arrow)"/>
+          <path class="dg-flow" d="M235,282 L312,282" marker-end="url(#arrow)"/>
+          <path class="dg-flow" d="M235,364 C275,354 280,305 312,290" marker-end="url(#arrow)"/>
+          <g class="dg-engine-g">
+            <rect class="dg-engine" x="315" y="205" width="175" height="155" rx="16"/>
+            <text class="dg-engine-title" x="402" y="248">BUNKER</text>
+            <text class="dg-engine-line" x="402" y="280">Modelos open</text>
+            <text class="dg-engine-line" x="402" y="302">RAG privado</text>
+            <line class="dg-divider" x1="345" y1="320" x2="460" y2="320"/>
+            <text class="dg-sub" x="402" y="342">Corre en tu hardware</text>
+          </g>
+          <path class="dg-flow" d="M490,282 L548,282" marker-end="url(#arrow)"/>
+          <g class="dg-box-g">
+            <rect class="dg-box" x="550" y="222" width="140" height="120" rx="12"/>
+            <text class="dg-node-label" x="620" y="278">Tu equipo</text>
+            <text class="dg-sub" x="620" y="302">Respuestas + citas</text>
+          </g>
+          <path class="dg-blocked" d="M402,205 L402,130 L910,130 L910,200"/>
+          <g class="dg-barrier"><circle cx="720" cy="130" r="15"/><path d="M713,123 L727,137 M727,123 L713,137"/></g>
+          <text class="dg-blocked-label" x="585" y="119">CERO SALIDA</text>
+          <g class="dg-cloud-g">
+            <rect class="dg-cloud" x="812" y="200" width="198" height="118" rx="16"/>
+            <text class="dg-cloud-label" x="911" y="254">NUBE PÚBLICA</text>
+            <text class="dg-sub" x="911" y="278">APIs LLM / SaaS</text>
+          </g>
+        </svg>
+      </div>
+      <p class="use-case reveal">
+        <span class="use-case-tag">CASO DE USO</span>
+        Un abogado pregunta: <em>«Resume todas las cláusulas de responsabilidad de estos 400 contratos.»</em>
+        La respuesta llega en segundos, con citas a cada archivo. Nada salió del despacho.
+      </p>
+    </section>
+
     <section class="features">
       <div class="section-head">
         <span class="eyebrow">QUÉ OBTIENES</span>

@@ -115,6 +115,33 @@ h1,h2,h3,h4{font-weight:700;letter-spacing:-.025em;line-height:.96}
 .proof{margin-top:clamp(2.5rem,6vw,4.5rem);max-width:60ch;font-size:clamp(1.05rem,1.8vw,1.5rem);font-weight:300;line-height:1.55;color:var(--muted)}
 .proof{border-left:2px solid var(--accent);padding-left:1.6rem}
 
+/* ---- architecture diagram ---- */
+.diagram{background:var(--bg)}
+.diagram-wrap{width:100%;overflow-x:auto;margin:.5rem 0 3rem;-webkit-overflow-scrolling:touch}
+svg.arch{display:block;width:100%;min-width:780px;height:auto;margin:0 auto}
+.arch text{font-family:'Space Grotesk',sans-serif}
+.dg-perimeter-label{font-family:'Space Mono',monospace;font-size:14px;letter-spacing:.18em;fill:var(--accent)}
+.dg-perimeter-sub{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.1em;fill:var(--muted)}
+.dg-node-label{font-size:17px;font-weight:500;fill:var(--fg);text-anchor:middle}
+.dg-sub{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.06em;fill:var(--muted);text-anchor:middle}
+.dg-engine-title{font-size:21px;font-weight:700;letter-spacing:.14em;fill:var(--accent);text-anchor:middle}
+.dg-engine-line{font-size:14px;font-weight:400;fill:var(--fg);text-anchor:middle}
+.dg-cloud-label{font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.14em;fill:var(--muted);text-anchor:middle}
+.dg-blocked-label{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.18em;fill:var(--accent);text-anchor:middle}
+.dg-perimeter{fill:rgba(233,162,59,.035);stroke:rgba(233,162,59,.45);stroke-width:1.5}
+.dg-box{fill:#101014;stroke:rgba(236,233,226,.18);stroke-width:1}
+.dg-engine{fill:rgba(233,162,59,.07);stroke:var(--accent);stroke-width:1.6}
+.dg-cloud{fill:none;stroke:rgba(236,233,226,.18);stroke-width:1.2;stroke-dasharray:5 5}
+.dg-flow{fill:none;stroke:rgba(233,162,59,.85);stroke-width:1.6}
+.dg-arrowhead{fill:var(--accent)}
+.dg-blocked{fill:none;stroke:rgba(236,233,226,.28);stroke-width:1.3;stroke-dasharray:4 6}
+.dg-barrier circle{fill:var(--bg);stroke:var(--accent);stroke-width:1.6}
+.dg-barrier path{stroke:var(--accent);stroke-width:2.2;fill:none;stroke-linecap:round}
+.dg-divider{stroke:rgba(236,233,226,.15);stroke-width:1}
+.use-case{max-width:64ch;margin:0 auto;font-size:clamp(1.05rem,1.7vw,1.4rem);font-weight:300;line-height:1.6;color:var(--fg);text-align:center}
+.use-case em{font-style:italic;color:var(--fg)}
+.use-case-tag{display:block;font-family:'Space Mono',monospace;font-size:.7rem;letter-spacing:.28em;color:var(--accent);margin-bottom:1rem}
+
 /* ---- cta ---- */
 .cta{min-height:92vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:1.6rem}
 .cta-title{font-size:clamp(3rem,12vw,11rem);mix-blend-mode:difference}

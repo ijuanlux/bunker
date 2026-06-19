@@ -206,6 +206,29 @@ function buildScrollAnims() {
       scrollTrigger: { trigger: h, start: 'top bottom', end: 'bottom top', scrub: true } });
   });
 
+  // architecture diagram: nodes fade in, flow lines draw themselves
+  const arch = document.querySelector('.arch');
+  if (arch) {
+    gsap.from(arch.querySelector('.dg-perimeter'), {
+      opacity: 0, scale: 0.96, transformOrigin: '50% 50%', duration: 1, ease: 'power3.out',
+      scrollTrigger: { trigger: arch, start: 'top 80%' }
+    });
+    gsap.from(arch.querySelectorAll('.dg-box-g,.dg-engine-g,.dg-cloud-g'), {
+      opacity: 0, y: 18, stagger: 0.12, duration: 0.7, ease: 'power2.out',
+      scrollTrigger: { trigger: arch, start: 'top 74%' }
+    });
+    arch.querySelectorAll('.dg-flow').forEach(f => {
+      const len = f.getTotalLength();
+      gsap.set(f, { strokeDasharray: len, strokeDashoffset: len });
+      gsap.to(f, { strokeDashoffset: 0, duration: 1, ease: 'power2.inOut',
+        scrollTrigger: { trigger: arch, start: 'top 68%' } });
+    });
+    gsap.from('.dg-blocked', { opacity: 0, duration: 1, ease: 'power2.out',
+      scrollTrigger: { trigger: arch, start: 'top 64%' } });
+    gsap.from('.dg-barrier', { opacity: 0, scale: 0, transformOrigin: '50% 50%', duration: 0.6,
+      ease: 'back.out(2.5)', scrollTrigger: { trigger: arch, start: 'top 58%' } });
+  }
+
   // tie the 3D core a touch to scroll velocity (extra rotation)
   ScrollTrigger.create({
     trigger: 'main', start: 'top top', end: 'bottom bottom', scrub: 1.5,
