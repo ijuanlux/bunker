@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bunker — Private AI. Sealed in.</title>
+<meta name="description" content="We deploy AI on your own infrastructure. Your data never leaves the building. Private, on-prem, GDPR-native AI for companies that legally can't send data to the cloud." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<script type="importmap">
+{ "imports": {
+  "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+}}
+</script>
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+
+  <div id="preloader">
+    <div class="pre-inner">
+      <span class="pre-label">SEALING THE BUNKER</span>
+      <span class="count">0</span>
+    </div>
+  </div>
+
+  <canvas id="bg"></canvas>
+
+  <header class="nav">
+    <a href="#top" class="brand">BUNKER<span class="brand-dot"></span></a>
+    <nav class="nav-links">
+      <a href="#approach">Approach</a>
+      <a href="#built">Built for</a>
+      <a href="#contact" class="nav-cta magnetic">Book a call</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <span class="eyebrow">PRIVATE · ON-PREM AI</span>
+      <h1 class="hero-title reveal">AI THAT<br>NEVER LEAVES<br>THE BUILDING.</h1>
+      <p class="hero-sub">We deploy AI on infrastructure you own. Your documents, your models, your perimeter. Nothing ever touches the cloud.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-solid magnetic">Book a call</a>
+        <a href="#approach" class="btn btn-ghost magnetic">How it works</a>
+      </div>
+      <div class="hero-meta">
+        <span>GDPR-native</span><i>/</i><span>Air-gapped</span><i>/</i><span>Zero egress</span>
+      </div>
+      <div class="scroll-hint">scroll</div>
+    </section>
+
+    <section class="statement" id="problem">
+      <p class="statement-text reveal-words">
+        Your best data is the data you <em>can't</em> upload. Legal files. Patient records.
+        Financial reports. The cloud is off the table — and so is the AI everyone else gets to use.
+      </p>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <span>ZERO EGRESS&nbsp;·&nbsp;ON YOUR METAL&nbsp;·&nbsp;GDPR-NATIVE&nbsp;·&nbsp;OPEN MODELS&nbsp;·&nbsp;AIR-GAPPED&nbsp;·&nbsp;AUDITABLE&nbsp;·&nbsp;ZERO EGRESS&nbsp;·&nbsp;ON YOUR METAL&nbsp;·&nbsp;GDPR-NATIVE&nbsp;·&nbsp;OPEN MODELS&nbsp;·&nbsp;AIR-GAPPED&nbsp;·&nbsp;AUDITABLE&nbsp;·&nbsp;</span>
+    </div>
+
+    <section class="approach" id="approach">
+      <div class="section-head">
+        <span class="eyebrow">THE APPROACH</span>
+        <h2 class="reveal">Three steps.<br>Nothing leaves.</h2>
+      </div>
+      <div class="steps">
+        <article class="step reveal">
+          <span class="step-num">01</span>
+          <h3>Deploy</h3>
+          <p>We install open models on your hardware or a private cloud you control. The whole stack lives inside your perimeter.</p>
+        </article>
+        <article class="step reveal">
+          <span class="step-num">02</span>
+          <h3>Connect</h3>
+          <p>Your files and systems wired into a private RAG. Answers come with citations to your own documents, not guesses.</p>
+        </article>
+        <article class="step reveal">
+          <span class="step-num">03</span>
+          <h3>Seal</h3>
+          <p>Air-gapped, hardened, audited. We lock it down, hand you the keys, and keep it running.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="section-head">
+        <span class="eyebrow">WHAT YOU GET</span>
+        <h2 class="reveal">A vault that thinks.</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature reveal"><h4>Zero egress</h4><p>Data never crosses your firewall. Not for training, not for inference, not ever.</p></div>
+        <div class="feature reveal"><h4>On your metal</h4><p>Runs on hardware you own or a private cloud you fully control. No shared tenancy.</p></div>
+        <div class="feature reveal"><h4>GDPR-native</h4><p>Built for EU compliance from day zero. Auditable by design, defensible on paper.</p></div>
+        <div class="feature reveal"><h4>Open models</h4><p>No vendor lock-in. Swap and upgrade models freely as the field moves.</p></div>
+        <div class="feature reveal"><h4>Your documents</h4><p>Private retrieval over your own files, with citations you can trace and trust.</p></div>
+        <div class="feature reveal"><h4>We run it</h4><p>Monitoring, updates, on-call. Your on-prem AI team without the headcount.</p></div>
+      </div>
+    </section>
+
+    <section class="built" id="built">
+      <div class="section-head">
+        <span class="eyebrow">BUILT FOR</span>
+        <h2 class="reveal">Where the cloud<br>isn't an option.</h2>
+      </div>
+      <ul class="verticals">
+        <li class="reveal">Law firms</li>
+        <li class="reveal">Clinics &amp; health</li>
+        <li class="reveal">Banks &amp; fintech</li>
+        <li class="reveal">Insurers</li>
+        <li class="reveal">Accounting firms</li>
+        <li class="reveal">Public sector</li>
+      </ul>
+      <p class="proof reveal">
+        Built by an infrastructure engineer with 20+ years in Windows, Active Directory and
+        regulated European banking. The boring, hard layer — done right.
+      </p>
+    </section>
+
+    <section class="cta" id="contact">
+      <span class="eyebrow">LET'S TALK</span>
+      <h2 class="cta-title reveal">Let's seal it.</h2>
+      <p class="cta-sub">Tell us what your data <em>can't</em> do. We'll show you what your AI still can.</p>
+      <a href="mailto:hello@bunker.io" class="btn btn-solid btn-lg magnetic">hello@bunker.io</a>
+    </section>
+
+    <footer class="footer">
+      <span class="brand">BUNKER<span class="brand-dot"></span></span>
+      <span class="foot-tag">Private AI, on your terms.</span>
+      <span class="foot-meta">bunker.io · © 2026</span>
+    </footer>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
