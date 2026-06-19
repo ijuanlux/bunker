@@ -46,7 +46,7 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
 .nav-links a{color:var(--fg);opacity:.85;transition:opacity .25s}
 .nav-links a:hover{opacity:1}
 .nav-cta{border:1px solid var(--fg);padding:.55rem 1.1rem;border-radius:100px;opacity:1!important}
-.lang{display:flex;gap:.55rem;font-family:'Space Mono',monospace;font-size:.72rem;letter-spacing:.12em}
+.lang{display:flex;gap:1rem;font-family:'Space Mono',monospace;font-size:.72rem;letter-spacing:.1em;margin-left:.6rem;padding-left:1.4rem;border-left:1px solid var(--line)}
 .lang a{opacity:.45;transition:opacity .25s;cursor:none}
 .lang a:hover{opacity:.9}
 .lang a.active{opacity:1;color:var(--accent)}
